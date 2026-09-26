@@ -102,8 +102,8 @@ El desarrollo del proyecto contempla **50 horas de práctica formativa**, distri
 
 | Actividad | Horas |
 |-----------|------:|
-| Planeación y reuniones | 6 |
-| Investigación y análisis de requisitos | 8 |
+| Planeación y reuniones | 7 |
+| Investigación y análisis de requisitos | 7 |
 | Documentación | 8 |
 | Desarrollo del software | 18 |
 | Pruebas y correcciones | 10 |
