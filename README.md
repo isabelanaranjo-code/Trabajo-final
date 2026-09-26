@@ -73,3 +73,39 @@ Crear un programa en Python que permita registrar, consultar y administrar docum
 | RNF-06 | El proyecto mantendrá una estructura organizada dentro del repositorio de GitHub. |
 
 ## 7. Plan de proyecto💸💰⌛
+### Actividades y responsables
+
+| Actividad | Responsable |
+|-----------|-------------|
+| Planeación del proyecto | Todo el equipo |
+| Documentación del repositorio | Laura Forero |
+| Diseño del logo | Integrante 2 |
+| Desarrollo del sistema | Integrante 3 |
+| Validaciones y pruebas | Integrante 4 |
+| Integración y revisión final | Todo el equipo |
+
+### Cronograma (Diagrama de Gantt)
+
+| Actividad | Semana 1 | Semana 2 | Semana 3 | Semana 4 |
+|-----------|:--------:|:--------:|:--------:|:--------:|
+| Planeación | 🟪 |  |  |  |
+| Documentación | 🟪 | 🟪 |  |  |
+| Diseño del logo | 🟪 |  |  |  |
+| Programación |  | 🟪 | 🟪 |  |
+| Validaciones |  | 🟪 | 🟪 |  |
+| Pruebas |  |  | 🟪 | 🟪 |
+| Entrega final |  |  |  | 🟪 |
+
+### Presupuesto del proyecto
+
+El desarrollo del proyecto contempla **50 horas de práctica formativa**, distribuidas entre los integrantes del equipo.
+
+| Actividad | Horas |
+|-----------|------:|
+| Planeación y reuniones | 6 |
+| Investigación y análisis de requisitos | 8 |
+| Documentación | 8 |
+| Desarrollo del software | 18 |
+| Pruebas y correcciones | 10 |
+| **Total** | **50 horas** |
+
