@@ -20,6 +20,14 @@ Soy estudiante de Ingeniería Industrial, con interés por aprender y desarrolla
 Huellitas es un sistema de gestión de PQRS diseñado para registrar y administrar las solicitudes relacionadas con el bienestar de perros y gatos de la Universidad de Antioquia. El software permitirá almacenar la información de cada caso en archivos planos independientes, generar radicados consecutivos, consultar el estado de las solicitudes y obtener estadísticas que apoyen la gestión del programa de bienestar animal. Su desarrollo se realizará completamente en Python mediante una aplicación de consola intuitiva y fácil de utilizar.
 
 ## 4. Licencia del software🧑‍💻🪪
+
+Huellitas © 2026 es un proyecto académico desarrollado por Laura Valentina Forero Rojas, Isabela Naranjo Gómez, Luciana Mejía Cardona y Juliana Silva Moreno.
+
+Este proyecto está licenciado bajo la **Creative Commons Atribución–NoComercial–SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)**.
+
+Esto significa que el proyecto puede compartirse siempre que se reconozca la autoría, no se utilice con fines comerciales y no se distribuyan versiones modificadas.
+
+> La licencia completa se encuentra en el archivo `LICENSE` del repositorio.
 >* <a href="https://github.com/isabelanaranjo-code/Trabajo-final">Huellitas</a> © 2026 by <a href="https://github.com/isabelanaranjo-code/Trabajo-final">Laura Valentina Forero Rojas, Isabela Naranjo Gómez, Luciana Mejía Cardona, Juliana Silva Moreno</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ## 5. Reporte de visión🗒️🖋️
