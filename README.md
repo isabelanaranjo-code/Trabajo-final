@@ -15,7 +15,7 @@ Soy estudiante de Ingeniería Industrial y me interesan especialmente temas como
 Soy estudiante de Ingeniería Industrial, con interés por aprender y desarrollar conocimientos en diferentes áreas de la carrera. Me caracterizo por ser una persona creativa, comprometida y con iniciativa, a quien le gusta proponer ideas, buscar soluciones y cuidar los detalles en los proyectos que realiza. También considero importante el trabajo en equipo y la comunicación para lograr buenos resultados. Dentro del desarrollo de Huellitas, puedo aportar principalmente en la generación de ideas, la organización y planificación del proyecto, el análisis de información y la elaboración de propuestas que contribuyan al desarrollo del programa.
 
 ## 3. Huellitas🐾🐾
-![Logo de Huellitas](images/logo2.png)
+<img src="images/logo2.png" alt="Logo de Huellitas" width="150">
 
 Huellitas es un sistema de gestión de PQRS diseñado para registrar y administrar las solicitudes relacionadas con el bienestar de perros y gatos de la Universidad de Antioquia. El software permitirá almacenar la información de cada caso en archivos planos independientes, generar radicados consecutivos, consultar el estado de las solicitudes y obtener estadísticas que apoyen la gestión del programa de bienestar animal. Su desarrollo se realizará completamente en Python mediante una aplicación de consola intuitiva y fácil de utilizar.
 
