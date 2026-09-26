@@ -79,9 +79,9 @@ Crear un programa en Python que permita registrar, consultar y administrar docum
 |-----------|-------------|
 | Planeación del proyecto | Todo el equipo |
 | Documentación del repositorio | Laura Forero |
-| Diseño del logo | Integrante 2 |
-| Desarrollo del sistema | Integrante 3 |
-| Validaciones y pruebas | Integrante 4 |
+| Diseño del logo | Laura Forero |
+| Desarrollo del sistema | Todo el equipo |
+| Validaciones y pruebas | Isabella Naranjo |
 | Integración y revisión final | Todo el equipo |
 
 ### Cronograma (Diagrama de Gantt)
