@@ -23,6 +23,30 @@ Huellitas es un sistema de gestión de PQRS diseñado para registrar y administr
 >* <a href="https://github.com/isabelanaranjo-code/Trabajo-final">Huellitas</a> © 2026 by <a href="https://github.com/isabelanaranjo-code/Trabajo-final">Laura Valentina Forero Rojas, Isabela Naranjo Gómez, Luciana Mejía Cardona, Juliana Silva Moreno</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ## 5. Reporte de visión🗒️🖋️
+### Visión
+
+Desarrollar un software confiable y organizado que facilite la gestión de las PQRS relacionadas con el bienestar de perros y gatos de la Universidad de Antioquia, permitiendo registrar, consultar y realizar seguimiento a cada solicitud de manera eficiente y estructurada.
+
+### Objetivo general
+
+Crear un programa en Python que permita registrar, consultar y administrar documentos PQRS mediante archivos planos, garantizando radicados consecutivos, validación de datos y una gestión organizada de la información.
+
+### Objetivos específicos
+
+- Registrar peticiones, quejas, reclamos y sugerencias.
+- Validar la información ingresada por el usuario.
+- Generar radicados únicos y consecutivos.
+- Consultar el estado de las solicitudes registradas.
+- Obtener estadísticas relevantes para apoyar la toma de decisiones.
+
+### Beneficios del software
+
+- Organiza la información de forma estructurada.
+- Reduce errores en el registro manual.
+- Facilita el seguimiento de cada PQRS.
+- Genera estadísticas útiles para la gestión del bienestar animal.
+- Mantiene la información separada según el tipo de solicitud.
+
 
 ## 6. Especificación de requisitos🔐📑
 
