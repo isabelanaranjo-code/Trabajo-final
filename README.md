@@ -49,5 +49,27 @@ Crear un programa en Python que permita registrar, consultar y administrar docum
 
 
 ## 6. Especificación de requisitos🔐📑
+### Requisitos funcionales
+
+| Código | Descripción |
+|---------|-------------|
+| RF-01 | Registrar peticiones, quejas, reclamos y sugerencias. |
+| RF-02 | Generar un número de radicado automático y consecutivo. |
+| RF-03 | Validar nombres, documentos, teléfonos, correos y fechas antes de almacenar la información. |
+| RF-04 | Consultar el estado general de cualquier PQRS registrada. |
+| RF-05 | Imprimir un comprobante de radicación en formato TXT. |
+| RF-06 | Calcular estadísticas sobre los registros almacenados. |
+| RF-07 | Guardar cada tipo de PQRS en un archivo plano independiente. |
+
+### Requisitos no funcionales
+
+| Código | Descripción |
+|---------|-------------|
+| RNF-01 | El software será desarrollado en Python mediante una aplicación de consola. |
+| RNF-02 | La interfaz deberá ser clara, intuitiva y fácil de utilizar. |
+| RNF-03 | La información se almacenará en archivos planos (.txt). |
+| RNF-04 | Los radicados deberán ser únicos y consecutivos. |
+| RNF-05 | El sistema calculará automáticamente la fecha máxima de respuesta (30 días). |
+| RNF-06 | El proyecto mantendrá una estructura organizada dentro del repositorio de GitHub. |
 
 ## 7. Plan de proyecto💸💰⌛
