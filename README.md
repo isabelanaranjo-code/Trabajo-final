@@ -116,3 +116,5 @@ El desarrollo del proyecto contempla **50 horas de práctica formativa**, distri
 | Pruebas y correcciones | 10 |
 | **Total** | **50 horas** |
 
+
+Prueba de conexión entre Visual Studio Code y GitHub.
