@@ -156,4 +156,3 @@ $$\text{Valor de referencia por hora} = \frac{\$1.750.905}{50} = \$35.018,10\tex
 
 En consecuencia, el valor total estimado del proyecto es de *$1.750.905 COP*, correspondiente a un SMLMV de 2026. Las 50 horas representan el tiempo total de trabajo formativo del equipo y se distribuyen entre las actividades necesarias para completar el desarrollo del software Huellitas.
 
-> Referencia: Salario Mínimo Legal Mensual Vigente de Colombia para el año 2026 ($1.750.905 COP).
