@@ -55,121 +55,98 @@ Crear un programa en Python que permita registrar, consultar y administrar docum
 - Mantiene la información separada según el tipo de solicitud.
 ## 6. Especificación de requisitos🔐📑
 
-### 6.1. Requisitos funcionales
 
-Los requisitos funcionales describen las acciones y los servicios que deberá realizar el sistema Huellitas para gestionar las peticiones, quejas, reclamos y sugerencias relacionadas con el bienestar animal en la Universidad de Antioquia.
+Los requisitos del sistema Huellitas establecen las funcionalidades y condiciones que deberá cumplir el software para gestionar adecuadamente las peticiones, quejas, reclamos y sugerencias relacionadas con el bienestar animal de la Universidad de Antioquia.
 
-| Código | Requisito funcional | Descripción |
-| :--- | :--- | :--- |
-| *RF-01* | Registro de PQRS | El sistema permitirá registrar peticiones, quejas, reclamos y sugerencias mediante opciones independientes en el menú principal. |
-| *RF-02* | Generación de radicado | El sistema asignará automáticamente un número de radicado único y consecutivo a cada solicitud registrada, con el propósito de facilitar su identificación y seguimiento. |
-| *RF-03* | Validación de información | El sistema verificará que los campos obligatorios estén completos y que los datos ingresados cumplan con los formatos establecidos antes de guardar una solicitud. |
-| *RF-04* | Clasificación de solicitudes | El sistema identificará y almacenará cada solicitud según su categoría: petición, queja, reclamo o sugerencia. |
-| *RF-05* | Almacenamiento de información | El sistema guardará la información de las solicitudes en archivos de texto plano, permitiendo conservar los registros y consultarlos posteriormente. |
-| *RF-06* | Consulta de solicitudes | El sistema permitirá consultar una solicitud mediante su número de radicado y mostrará la información registrada, incluyendo su tipo, fecha y estado. |
-| *RF-07* | Generación de comprobantes | El sistema permitirá generar un comprobante en formato de texto con los datos principales de la solicitud y su número de radicado. |
-| *RF-08* | Seguimiento de solicitudes | El sistema permitirá identificar el estado de cada solicitud, utilizando categorías como registrada, en proceso y solucionada. |
-| *RF-09* | Control de tiempos de respuesta | El sistema tendrá en cuenta un plazo máximo de 30 días calendario para el seguimiento y la respuesta de las solicitudes, de acuerdo con los parámetros establecidos para el proyecto. |
-| *RF-10* | Generación de estadísticas | El sistema permitirá consultar estadísticas generales sobre las solicitudes registradas, como cantidad por categoría, estado, porcentaje de solicitudes solucionadas y tiempo promedio de respuesta. |
+Los requisitos funcionales describen las operaciones que podrá realizar el usuario dentro del programa, mientras que los requisitos no funcionales determinan las características técnicas, de seguridad, organización, confiabilidad y facilidad de uso que deberá cumplir el sistema.
 
-### 6.2. Requisitos no funcionales
+Requisitos funcionales
 
-Los requisitos no funcionales establecen las condiciones de funcionamiento, calidad y características técnicas que deberá cumplir el sistema Huellitas.
+Código	Descripción
+RF-01	El sistema permitirá registrar peticiones, quejas, reclamos y sugerencias relacionadas con el bienestar de perros y gatos de la Universidad de Antioquia. Para ello, solicitará la información del usuario, el tipo de solicitud, la descripción detallada de la situación y los datos necesarios para identificar el caso.
+RF-02	El sistema generará automáticamente un número de radicado único y consecutivo para cada solicitud registrada. Este identificador permitirá diferenciar los casos, evitar duplicidades y facilitar su consulta y seguimiento posterior.
+RF-03	El sistema verificará que los campos obligatorios estén completos antes de guardar una solicitud. También validará que los nombres, documentos de identidad, números telefónicos, correos electrónicos y fechas cumplan con los formatos establecidos. Si encuentra información incorrecta o incompleta, informará al usuario y solicitará su corrección.
+RF-04	El sistema almacenará las solicitudes en cuatro archivos planos independientes, correspondientes a peticiones, quejas, reclamos y sugerencias. Cada registro deberá conservar su información para que pueda consultarse incluso después de cerrar y volver a ejecutar el programa.
+RF-05	El sistema calculará automáticamente la fecha máxima de respuesta de cada solicitud, tomando como referencia un plazo de 30 días calendario desde la fecha de radicación. Esta fecha quedará asociada al registro para facilitar el control de los tiempos de atención.
+RF-06	Después de registrar una solicitud, el programa generará un comprobante en formato TXT que incluirá el número de radicado, la fecha de registro, el tipo de PQRS y los datos principales del caso. El comprobante servirá como soporte de la recepción de la solicitud.
+RF-07	El usuario podrá consultar una solicitud ingresando su número de radicado. El sistema buscará el registro correspondiente y mostrará los datos del solicitante, la descripción del caso, la fecha de radicación, la fecha máxima de respuesta y el estado actual. Si el radicado no existe, presentará un mensaje informativo.
+RF-08	El sistema permitirá modificar el estado de las solicitudes registradas, de acuerdo con las etapas de atención establecidas: Registrada, En proceso y Solucionada. Los cambios de estado deberán conservar la información original de la solicitud y permitir identificar su situación actual.
+RF-09	El programa permitirá identificar las solicitudes pendientes de atención, las que se encuentran en proceso y las que ya fueron solucionadas. También facilitará la identificación de los casos cuya fecha máxima de respuesta esté próxima o se haya vencido, para apoyar el seguimiento oportuno.
+RF-10	El sistema generará reportes estadísticos a partir de la información almacenada. Deberá calcular obligatoriamente el promedio de días que tarda la atención de las PQRS y, adicionalmente, cinco estadísticas que permitan analizar la gestión, como la cantidad de solicitudes por tipo, la cantidad por estado, el total de solicitudes recibidas, la proporción de solicitudes solucionadas y la cantidad de solicitudes pendientes. Los resultados deberán presentarse de manera clara y comprensible.
 
-| Código | Requisito no funcional | Descripción |
-| :--- | :--- | :--- |
-| *RNF-01* | Plataforma de desarrollo | El sistema deberá desarrollarse en el lenguaje de programación Python y funcionar mediante una interfaz de consola. |
-| *RNF-02* | Facilidad de uso | El menú deberá presentar opciones claras, organizadas y comprensibles para facilitar la interacción de los usuarios. |
-| *RNF-03* | Persistencia de la información | La información registrada deberá conservarse en archivos de texto plano, evitando que los datos se pierdan al cerrar el programa. |
-| *RNF-04* | Integridad de los datos | El sistema deberá garantizar que los números de radicado sean únicos y que la información almacenada mantenga una estructura organizada. |
-| *RNF-05* | Rendimiento | El sistema deberá ejecutar las operaciones de registro, consulta y generación de estadísticas en tiempos adecuados para el volumen de información esperado. |
-| *RNF-06* | Mantenibilidad | El código deberá organizarse en módulos y funciones que faciliten su comprensión, revisión, corrección y actualización. |
-| *RNF-07* | Manejo de errores | El sistema deberá controlar entradas incorrectas y mostrar mensajes que orienten al usuario para continuar utilizando el programa. |
+Requisitos no funcionales
 
+Código	Descripción
+RNF-01	El software será desarrollado en el lenguaje de programación Python y funcionará mediante una aplicación de consola. Las operaciones principales de registro, consulta y seguimiento deberán poder ejecutarse sin requerir conexión permanente a internet.
+RNF-02	La interfaz de consola deberá contar con un menú principal organizado, con opciones claramente identificadas para registrar, consultar, actualizar y generar reportes de PQRS. La navegación deberá ser sencilla y permitir que el usuario comprenda qué acción debe realizar en cada momento.
+RNF-03	La información se almacenará de manera persistente en archivos planos con extensión TXT. Los archivos deberán estar organizados por tipo de solicitud y conservar los registros después de finalizar la ejecución del programa.
+RNF-04	El código fuente tendrá una estructura modular que facilite su lectura, mantenimiento y modificación. Las funciones de validación, manejo de archivos, registro de solicitudes y generación de reportes deberán organizarse en módulos independientes, de acuerdo con las necesidades del proyecto.
+RNF-05	El sistema deberá manejar adecuadamente los errores de entrada y las situaciones inesperadas, como datos incompletos, formatos incorrectos, radicados inexistentes o dificultades al acceder a los archivos. En estos casos, mostrará mensajes comprensibles y evitará que el programa se cierre inesperadamente.
+RNF-06	La información presentada en pantalla y en los comprobantes TXT deberá tener una estructura clara, ordenada y legible. Los mensajes deberán utilizar un lenguaje sencillo para facilitar la comprensión de los usuarios.
+RNF-07	El sistema deberá proteger la integridad de los registros almacenados, evitando la duplicación de radicados y la modificación accidental de la información durante las consultas. Las actualizaciones deberán conservar los datos originales que no sean objeto de modificación.
 
-## 7. Plan de proyecto y presupuesto💸💰⌛
+7. Plan de proyecto💸💰⌛
 
-### 7.1. Corrección de roles y responsabilidades
+El plan de proyecto organiza las actividades necesarias para desarrollar Huellitas, establece los responsables de cada proceso, distribuye el trabajo durante las 16 semanas del semestre y presenta la valoración del tiempo de práctica formativa invertido por el equipo.
 
-La distribución de roles y responsabilidades se establece teniendo en cuenta las habilidades, los aportes y las actividades que desarrollará cada integrante durante las diferentes etapas del proyecto. Aunque cada integrante tendrá responsabilidades principales, algunas actividades se realizarán de manera conjunta para garantizar la integración y el cumplimiento de los objetivos.
+Actividades y responsables
 
-| Integrante | Rol asignado | Responsabilidades específicas | Actividades y entregables |
-| :--- | :--- | :--- | :--- |
-| *Laura Valentina Forero Rojas* | Coordinación, planeación y documentación | Organizar las actividades del equipo, apoyar la distribución de tareas, realizar seguimiento al cumplimiento del cronograma y consolidar la información correspondiente a la documentación del proyecto. | Organización del trabajo, actualización del README, elaboración y revisión de la documentación y consolidación de los avances. |
-| *Laura Valentina Forero Rojas* | Diseño visual y presentación | Apoyar la construcción de la identidad visual del proyecto y organizar los elementos gráficos y de presentación que permitan identificar a Huellitas. | Diseño del logo, selección de elementos visuales y apoyo en la presentación del proyecto. |
-| *Isabela Naranjo Gómez* | Gestión y organización de datos | Participar en la identificación de los datos necesarios para el registro de las solicitudes, definir la información que deberá almacenarse y apoyar la organización de los archivos del sistema. | Identificación de campos, organización de los registros y apoyo en la estructura de almacenamiento de la información. |
-| *Isabela Naranjo Gómez* | Validación y revisión | Revisar que la información ingresada cumpla con las condiciones establecidas, identificar posibles inconsistencias y apoyar las pruebas del funcionamiento del sistema. | Revisión de datos, validación de registros, identificación de errores y verificación de resultados. |
-| *Luciana Mejía Cardona* | Diseño y programación del sistema | Participar en el diseño de la solución informática y en el desarrollo de las funcionalidades principales mediante Python, procurando que el programa responda a los requisitos definidos. | Diseño de la estructura del programa, desarrollo de funcionalidades y elaboración de componentes del sistema. |
-| *Luciana Mejía Cardona* | Estructuras de programación y revisión | Apoyar la organización del código mediante funciones, estructuras de control y manejo de datos, además de revisar el funcionamiento de los componentes desarrollados. | Implementación de estructuras de programación, revisión del código y apoyo en la corrección de errores. |
-| *Juliana Silva Moreno* | Análisis de la problemática y requisitos | Participar en el análisis de las necesidades relacionadas con la gestión de PQRS de bienestar animal, identificar los problemas que busca solucionar el proyecto y proponer alternativas de mejora. | Análisis de la problemática, identificación de necesidades, formulación de requisitos y propuestas para el funcionamiento del sistema. |
-| *Juliana Silva Moreno* | Organización y planificación | Apoyar la definición de las actividades necesarias para desarrollar el proyecto, organizar las ideas del equipo y contribuir al seguimiento de los objetivos y tiempos establecidos. | Organización de actividades, apoyo en el cronograma y seguimiento de los avances del proyecto. |
-| *Todo el equipo* | Integración y pruebas | Trabajar conjuntamente en la integración de los componentes del programa, comprobar que las funcionalidades se relacionen correctamente y detectar errores durante su ejecución. | Integración de módulos, ejecución de pruebas, identificación de fallas y aplicación de correcciones. |
-| *Todo el equipo* | Revisión y entrega final | Verificar que el proyecto cumpla con los requisitos establecidos, revisar la documentación y preparar los elementos necesarios para la presentación y entrega académica. | Revisión general, ajustes finales, organización de archivos y preparación de la sustentación. |
+Las actividades se distribuyen teniendo en cuenta los intereses, habilidades y fortalezas de cada integrante. Cada persona tendrá responsabilidades principales dentro del proyecto, pero las etapas de desarrollo, integración y revisión se realizarán de manera colaborativa para garantizar que todas conozcan el funcionamiento general del sistema.
 
-### 7.2. Corrección del cronograma de actividades – Diagrama de Gantt
+Actividad	Responsable(s)	Descripción del trabajo
+Coordinación y seguimiento del proyecto	Laura Valentina Forero Rojas	Organizar las actividades del equipo, hacer seguimiento al cumplimiento del cronograma, coordinar reuniones de trabajo y registrar los avances y compromisos establecidos. También apoyará la identificación de dificultades que puedan afectar el desarrollo del proyecto.
+Documentación del proyecto	Laura Valentina Forero Rojas, con aportes de todo el equipo	Elaborar, organizar y actualizar la documentación del proyecto en GitHub. Esta actividad incluye la descripción del software, los objetivos, los requisitos, las actividades, el cronograma, el presupuesto y el registro de los avances realizados durante el semestre.
+Diseño de identidad visual	Laura Valentina Forero Rojas y Luciana Mejía Cardona	Diseñar el logo y los elementos gráficos que representarán a Huellitas. También apoyar la organización visual de los documentos y materiales utilizados para presentar el proyecto.
+Análisis y organización de datos	Isabela Naranjo Gómez	Definir cómo se organizará y almacenará la información de las PQRS. Establecer la estructura de los registros, organizar los cuatro archivos planos por tipo de solicitud y comprobar que los datos puedan guardarse, recuperarse y consultarse correctamente.
+Validación de información	Isabela Naranjo Gómez, con apoyo de todo el equipo	Definir y verificar las condiciones que deben cumplir los datos ingresados por los usuarios. Realizar pruebas de nombres, documentos, teléfonos, correos y fechas, comprobando que el programa identifique los errores y solicite las correcciones necesarias.
+Diseño de la solución y programación	Luciana Mejía Cardona y todo el equipo	Participar en la definición de la estructura del programa y desarrollar las funcionalidades principales en Python. Esto incluye el menú de navegación, el registro de PQRS, la generación de radicados, las consultas, la actualización de estados y la generación de estadísticas.
+Planeación y análisis de requisitos	Juliana Silva Moreno y todo el equipo	Analizar las necesidades que busca atender Huellitas, organizar las ideas del equipo y establecer las funcionalidades que deberá tener el software. Formular, revisar y ampliar los requisitos funcionales y no funcionales para que correspondan con el propósito del proyecto.
+Pruebas y corrección de errores	Todo el equipo, con coordinación de Isabela Naranjo Gómez	Realizar pruebas de funcionamiento para comprobar el registro, almacenamiento, consulta, validación y actualización de las solicitudes. Identificar errores, registrar las dificultades encontradas y verificar que las correcciones permitan obtener los resultados esperados.
+Integración y revisión final	Todo el equipo	Integrar las funcionalidades desarrolladas, comprobar que los diferentes módulos trabajen correctamente en conjunto y verificar que la información se conserve adecuadamente. Revisar la documentación, organizar los archivos del repositorio y preparar la entrega y sustentación del proyecto.
 
-El cronograma contempla un periodo de 16 semanas, correspondiente a la duración del semestre académico. Durante este tiempo se desarrollarán las diferentes etapas del proyecto, desde la identificación de la problemática y la definición de los requisitos hasta la programación, integración, pruebas y entrega final.
+Aunque cada actividad tiene responsables principales, todos los integrantes participarán en las decisiones importantes, la revisión de resultados y la solución de dificultades. De esta manera, el equipo podrá mantener una comunicación constante y garantizar que el desarrollo del software responda a los objetivos establecidos.
 
-| N.º | Actividad | Descripción | Responsable(s) | Periodo |
-| :---: | :--- | :--- | :--- | :--- |
-| *1* | Conformación del equipo y selección del proyecto | Definir los integrantes, seleccionar la problemática y establecer la idea general de solución. | Todo el equipo | Semana 1 |
-| *2* | Análisis de la problemática | Identificar las necesidades relacionadas con la atención de PQRS sobre bienestar animal en la Universidad de Antioquia. | Todo el equipo | Semanas 1 y 2 |
-| *3* | Definición de objetivos y alcance | Establecer el propósito del sistema, sus objetivos y los límites del proyecto. | Todo el equipo | Semana 2 |
-| *4* | Identificación de requisitos | Definir los requisitos funcionales y no funcionales que deberá cumplir el sistema. | Juliana e Isabela, con apoyo del equipo | Semanas 2 y 3 |
-| *5* | Identificación y organización de datos | Determinar los campos necesarios para registrar, clasificar y consultar las solicitudes. | Isabela y Luciana | Semanas 3 y 4 |
-| *6* | Diseño de la estructura del programa | Definir la organización general del código, las opciones del menú y las funciones principales. | Luciana y todo el equipo | Semanas 4 y 5 |
-| *7* | Documentación y organización del repositorio | Organizar la información del proyecto, actualizar el README y estructurar los archivos en GitHub. | Laura | Semanas 4 a 6 |
-| *8* | Diseño del almacenamiento de información | Establecer la forma de guardar y organizar los registros mediante archivos de texto plano. | Isabela y Luciana | Semanas 5 y 6 |
-| *9* | Desarrollo del menú principal | Programar el menú de navegación y las opciones generales del sistema. | Luciana, con apoyo del equipo | Semanas 6 y 7 |
-| *10* | Desarrollo de módulos PQRS | Implementar las opciones correspondientes al registro de peticiones, quejas, reclamos y sugerencias. | Luciana y todo el equipo | Semanas 7 a 9 |
-| *11* | Implementación de validaciones y almacenamiento | Incorporar controles para los datos ingresados y el almacenamiento de las solicitudes. | Isabela y Luciana | Semanas 8 a 10 |
-| *12* | Desarrollo de consultas y seguimiento | Implementar la búsqueda de solicitudes por radicado y la consulta de su estado. | Luciana, con apoyo de Isabela | Semanas 9 a 11 |
-| *13* | Desarrollo de estadísticas | Incorporar las funciones para obtener información general y estadísticas de las solicitudes registradas. | Luciana y todo el equipo | Semanas 10 a 12 |
-| *14* | Integración de funcionalidades | Unir los diferentes módulos y comprobar que funcionen correctamente dentro del programa. | Todo el equipo | Semanas 12 y 13 |
-| *15* | Pruebas y corrección de errores | Ejecutar pruebas, verificar los resultados, identificar fallas y realizar los ajustes necesarios. | Todo el equipo | Semanas 13 y 14 |
-| *16* | Revisión de documentación | Revisar la documentación, el repositorio y la correspondencia entre los requisitos y las funcionalidades desarrolladas. | Laura y todo el equipo | Semana 15 |
-| *17* | Entrega y sustentación | Organizar la versión final del proyecto y preparar su presentación y entrega académica. | Todo el equipo | Semana 16 |
+Cronograma (Diagrama de Gantt)
 
-#### Representación del diagrama de Gantt
+El cronograma contempla las 16 semanas del semestre académico y organiza las actividades de acuerdo con las etapas del proyecto: planeación, análisis, diseño, programación, integración, pruebas y entrega. Algunas actividades se desarrollarán simultáneamente debido a que requieren trabajo coordinado entre los integrantes.
 
-| Actividad | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | S10 | S11 | S12 | S13 | S14 | S15 | S16 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| *Conformación del equipo y selección* | X | | | | | | | | | | | | | | | |
-| *Análisis de la problemática* | X | X | | | | | | | | | | | | | | |
-| *Objetivos y alcance* | | X | | | | | | | | | | | | | | |
-| *Identificación de requisitos* | | X | X | | | | | | | | | | | | | |
-| *Organización de datos* | | | X | X | | | | | | | | | | | | |
-| *Diseño de estructura del programa* | | | | X | X | | | | | | | | | | | |
-| *Documentación y repositorio* | | | | X | X | X | | | | | | | | | | |
-| *Almacenamiento de información* | | | | | X | X | | | | | | | | | | |
-| *Menú principal* | | | | | | X | X | | | | | | | | | |
-| *Módulos PQRS* | | | | | | | X | X | X | | | | | | | |
-| *Validaciones y almacenamiento* | | | | | | | | X | X | X | | | | | | |
-| *Consultas y seguimiento* | | | | | | | | | X | X | X | | | | | |
-| *Estadísticas* | | | | | | | | | | X | X | X | | | | |
-| *Integración de funcionalidades* | | | | | | | | | | | | X | X | | | |
-| *Pruebas y corrección de errores* | | | | | | | | | | | | | X | X | | |
-| *Revisión de documentación* | | | | | | | | | | | | | | | X | |
-| *Entrega y sustentación* | | | | | | | | | | | | | | | | X |
+Convención: 🟪 = semana en la que se desarrolla la actividad.
 
-### 7.3. Presupuesto del proyecto
+Actividad	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16
+Organización del equipo y planeación	🟪	🟪														
+Análisis del problema y contexto	🟪	🟪														
+Identificación y especificación de requisitos		🟪	🟪													
+Documentación inicial del proyecto		🟪	🟪	🟪												
+Diseño del logo e identidad del proyecto			🟪													
+Diseño de la estructura del programa y archivos			🟪	🟪												
+Desarrollo del registro de PQRS				🟪	🟪	🟪										
+Almacenamiento en archivos y generación de comprobantes					🟪	🟪	🟪									
+Implementación de validaciones					🟪	🟪	🟪	🟪								
+Primera entrega y revisión de observaciones								🟪								
+Desarrollo de consultas y actualización de estados									🟪	🟪						
+Desarrollo de estadísticas y seguimiento de plazos										🟪	🟪	🟪				
+Integración de funcionalidades												🟪	🟪			
+Pruebas generales y corrección de errores													🟪	🟪		
+Elaboración y revisión del manual y documentación final														🟪	🟪	
+Entrega final del software															🟪	
+Preparación y sustentación del proyecto																🟪
 
-El presupuesto del proyecto se calcula teniendo en cuenta el tiempo de trabajo invertido por los integrantes durante el desarrollo de las actividades. De acuerdo con el planteamiento académico, este aporte no representa un desembolso de dinero, sino una valoración del tiempo de práctica y formación del equipo, tomando como referencia un salario mínimo legal mensual vigente (SMLMV).
+Presupuesto del proyecto
 
-Para realizar el cálculo se establece una dedicación total de 50 horas de trabajo del equipo, valoradas en conjunto como un salario mínimo legal mensual vigente de referencia.
+De acuerdo con las indicaciones establecidas en la guía del trabajo final, el presupuesto corresponde al tiempo de práctica formativa invertido por los cuatro integrantes del equipo. Se contempla un total de 50 horas de trabajo, valoradas económicamente con referencia a un (1) Salario Mínimo Legal Mensual Vigente (SMLMV) de 2026, equivalente a $1.750.905 COP.
 
-*Base de cálculo:*
-* Salario mínimo mensual de referencia: *$1.750.905 COP*.
-* Total de horas de trabajo del equipo: *50 horas*.
-* Valor de referencia por hora: *$35.018,10 COP*.
+Este presupuesto representa una valoración académica del trabajo realizado y no un desembolso de dinero. Para distribuir el valor entre las actividades, se calcula una tarifa de referencia por hora dividiendo el SMLMV entre las 50 horas totales del proyecto.
 
-| Actividad | Horas estimadas | Valor por hora (COP) | Costo estimado (COP) |
-| :--- | :---: | :---: | :---: |
-| *Planeación y organización del proyecto* | 7 | $35.018,10 | $245.126,70 |
-| *Investigación y definición de requisitos* | 7 | $35.018,10 | $245.126,70 |
-| *Documentación y organización del repositorio* | 8 | $35.018,10 | $280.144,80 |
-| *Diseño y desarrollo del sistema* | 18 | $35.018,10 | $630.325,80 |
-| *Pruebas, revisión y corrección de errores* | 10 | $35.018,10 | $350.181,00 |
-| *Total* | *50* | | *$1.750.905,00* |
+Valor de referencia por hora = $1.750.905 ÷ 50 = $35.018,10 COP
 
-El valor total estimado del proyecto corresponde a *$1.750.905 COP*, equivalente a un salario mínimo mensual de referencia. Este presupuesto representa la valoración académica del tiempo dedicado por los integrantes al desarrollo del proyecto y no implica que el equipo deba realizar un pago efectivo por dicho valor.
+Actividad	Horas estimadas	Valor estimado
+Planeación y reuniones de equipo	7	$245.126,70
+Investigación y análisis de requisitos	7	$245.126,70
+Documentación del proyecto	8	$280.144,80
+Desarrollo e integración del software	18	$630.325,80
+Pruebas y corrección de errores	10	$350.181,00
+Total	50	$1.750.905,00
+
+En consecuencia, el valor total estimado del proyecto es de $1.750.905 COP, correspondiente a un SMLMV de 2026. Las 50 horas representan el tiempo total de trabajo formativo del equipo y se distribuyen entre las actividades necesarias para completar el desarrollo del software Huellitas.
+
+Referencia: Salario Mínimo Legal Mensual Vigente de Colombia para el año 2026.
