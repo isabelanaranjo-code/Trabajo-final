@@ -53,7 +53,6 @@ Crear un programa en Python que permita registrar, consultar y administrar docum
 - Facilita el seguimiento de cada PQRS.
 - Genera estadísticas útiles para la gestión del bienestar animal.
 - Mantiene la información separada según el tipo de solicitud.
-l Mensual Vigente de Colombia para el año 2026.
 
 ## 6. Especificación de requisitos🔐📑
 
