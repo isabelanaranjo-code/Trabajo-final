@@ -144,6 +144,8 @@ Este presupuesto representa una valoración académica del trabajo realizado y n
 
 $$\text{Valor de referencia por hora} = \frac{\$1.750.905}{50} = \$35.018,10\text{ COP}$$
 
+La tarifa de $35.018,10 COP por hora es un valor de referencia que resulta de dividir el SMLMV entre las 50 horas del proyecto, no corresponde al valor legal de la hora de trabajo.
+
 | Actividad | Horas estimadas | Valor estimado (COP) |
 | :--- | :---: | :---: |
 | *Planeación y reuniones de equipo* | 7 | $245.126,70 |
