@@ -127,7 +127,7 @@ Convención: 🟪 = semana en la que se desarrolla la actividad.
 | *Diseño del logo e identidad del proyecto* |   |   |   |   |   |   |   | 🟪 |   |   |   |   |   |   |   |   |
 | *Primera entrega y revisión de observaciones* |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |   |   |   |   |
 | *Diseño de la estructura del programa y archivos* |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 | 🟪 |   |   |   |   |
-| *Desarrollo del registro de PQRS* |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |   |   |
+| *Desarrollo del registro de PQRS* |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 | 🟪 |   |   |   |   |
 | *Implementación de validaciones* |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 | 🟪 |   |   |   |   |
 | *Almacenamiento en archivos y generación de comprobantes* |   |   |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |
 | *Desarrollo de consultas y actualización de estados* |   |   |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |
