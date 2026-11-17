@@ -99,10 +99,10 @@ Las actividades se distribuyen teniendo en cuenta los intereses, habilidades y f
 | Actividad | Responsable(s) | Descripción del trabajo |
 | :--- | :--- | :--- |
 | *Coordinación y seguimiento del proyecto* | Laura Valentina Forero Rojas | Organizar las actividades del equipo, hacer seguimiento al cumplimiento del cronograma, coordinar reuniones de trabajo y registrar los avances y compromisos establecidos. También apoyará la identificación de dificultades que puedan afectar el desarrollo del proyecto. |
-| *Documentación del proyecto* | Laura Valentina Forero Rojas, con aportes de todo el equipo | Elaborar, organizar y actualizar la documentación del proyecto en GitHub. Esta actividad incluye la descripción del software, los objetivos, los requisitos, las actividades, el cronograma, el presupuesto y el registro de los avances realizados durante el semestre. |
+| *Documentación del proyecto* | Todo el equipo | Elaborar, organizar y actualizar la documentación del proyecto en GitHub. Esta actividad incluye la descripción del software, los objetivos, los requisitos, las actividades, el cronograma, el presupuesto y el registro de los avances realizados durante el semestre. |
 | *Diseño de identidad visual* | Laura Valentina Forero Rojas y Luciana Mejía Cardona | Diseñar el logo y los elementos gráficos que representarán a Huellitas. También apoyar la organización visual de los documentos y materiales utilizados para presentar el proyecto. |
-| *Análisis y organización de datos* | Isabela Naranjo Gómez | Definir cómo se organizará y almacenará la información de las PQRS. Establecer la estructura de los registros, organizar los cuatro archivos planos por tipo de solicitud y comprobar que los datos puedan guardarse, recuperarse y consultarse correctamente. |
-| *Validación de información* | Isabela Naranjo Gómez, con apoyo de todo el equipo | Definir y verificar las condiciones que deben cumplir los datos ingresados por los usuarios. Realizar pruebas de nombres, documentos, teléfonos, correos y fechas, comprobando que el programa identifique los errores y solicite las correcciones necesarias. |
+| *Análisis y organización de datos* | Isabela Naranjo Gómez | Crear y organizar el repositorio de GitHub, sus carpetas y el README. Definir cómo se organizará y almacenará la información de las PQRS, establecer la estructura de los registros, organizar los cuatro archivos planos por tipo de solicitud y comprobar que los datos puedan guardarse, recuperarse y consultarse correctamente. |
+| *Validación de información* | Isabela Naranjo Gómez y todo el equipo | Definir y verificar las condiciones que deben cumplir los datos ingresados por los usuarios. Realizar pruebas de nombres, documentos, teléfonos, correos y fechas, comprobando que el programa identifique los errores y solicite las correcciones necesarias. |
 | *Diseño de la solución y programación* | Luciana Mejía Cardona y todo el equipo | Participar en la definición de la estructura del programa y desarrollar las funcionalidades principales en Python. Esto incluye el menú de navegación, el registro de PQRS, la generación de radicados, las consultas, la actualización de estados y la generación de estadísticas. |
 | *Planeación y análisis de requisitos* | Juliana Silva Moreno y todo el equipo | Analizar las necesidades que busca atender Huellitas, organizar las ideas del equipo y establecer las funcionalidades que deberá tener el software. Formular, revisar y ampliar los requisitos funcionales y no funcionales para que correspondan con el propósito del proyecto. |
 | *Pruebas y corrección de errores* | Todo el equipo, con coordinación de Isabela Naranjo Gómez | Realizar pruebas de funcionamiento para comprobar el registro, almacenamiento, consulta, validación y actualización de las solicitudes. Identificar errores, registrar las dificultades encontradas y verificar que las correcciones permitan obtener los resultados esperados. |
@@ -118,23 +118,25 @@ Convención: 🟪 = semana en la que se desarrolla la actividad.
 
 | Actividad | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| *Organización del equipo y planeación* | 🟪 | 🟪 | | | | | | | | | | | | | | |
-| *Análisis del problema y contexto* | 🟪 | 🟪 | | | | | | | | | | | | | | |
-| *Identificación y especificación de requisitos* | | 🟪 | 🟪 | | | | | | | | | | | | | |
-| *Documentación inicial del proyecto* | | 🟪 | 🟪 | 🟪 | | | | | | | | | | | | |
-| *Diseño del logo e identidad del proyecto* | | | 🟪 | | | | | | | | | | | | | |
-| *Diseño de la estructura del programa y archivos* | | | 🟪 | 🟪 | | | | | | | | | | | | |
-| *Desarrollo del registro de PQRS* | | | | 🟪 | 🟪 | 🟪 | | | | | | | | | | |
-| *Almacenamiento en archivos y generación de comprobantes* | | | | | | 🟪 | 🟪 | 🟪 | | | | | | | | |
-| *Implementación de validaciones* | | | | | | 🟪 | 🟪 | 🟪 | 🟪 | | | | | | | |
-| *Primera entrega y revisión de observaciones* | | | | | | | | | 🟪 | | | | | | | |
-| *Desarrollo de consultas y actualización de estados* | | | | | | | | | | 🟪 | 🟪 | | | | | |
-| *Desarrollo de estadísticas y seguimiento de plazos* | | | | | | | | | | | 🟪 | 🟪 | 🟪 | | | |
-| *Integración de funcionalidades* | | | | | | | | | | | | | 🟪 | 🟪 | | |
-| *Pruebas generales y corrección de errores* | | | | | | | | | | | | | | 🟪 | 🟪 | |
-| *Elaboración y revisión del manual y documentación final* | | | | | | | | | | | | | | | 🟪 | 🟪 |
-| *Entrega final del software* | | | | | | | | | | | | | | | | 🟪 |
-| *Preparación y sustentación del proyecto* | | | | | | | | | | | | | | | | 🟪 |
+| *Conformación del grupo y elaboración de actas* | 🟪 | 🟪 | 🟪 | 🟪 |   |   |   |   |   |   |   |   |   |   |   |   |
+| *Organización del equipo y planeación* |   |   |   | 🟪 | 🟪 |   |   |   |   |   |   |   |   |   |   |   |
+| *Análisis del problema y contexto* |   |   |   |   | 🟪 | 🟪 |   |   |   |   |   |   |   |   |   |   |
+| *Identificación y especificación de requisitos* |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |   |   |   |   |   |
+| *Documentación inicial del proyecto* |   |   |   |   | 🟪 | 🟪 | 🟪 | 🟪 |   |   |   |   |   |   |   |   |
+| *Elaboración del reporte de visión, licencia y plan de proyecto* |   |   |   |   |   | 🟪 | 🟪 | 🟪 |   |   |   |   |   |   |   |   |
+| *Diseño del logo e identidad del proyecto* |   |   |   |   |   |   |   | 🟪 |   |   |   |   |   |   |   |   |
+| *Primera entrega y revisión de observaciones* |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |   |   |   |   |
+| *Diseño de la estructura del programa y archivos* |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 | 🟪 |   |   |   |   |
+| *Desarrollo del registro de PQRS* |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |   |   |
+| *Implementación de validaciones* |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 | 🟪 |   |   |   |   |
+| *Almacenamiento en archivos y generación de comprobantes* |   |   |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |
+| *Desarrollo de consultas y actualización de estados* |   |   |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |   |
+| *Desarrollo de estadísticas y seguimiento de plazos* |   |   |   |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 |   |   |
+| *Integración de funcionalidades* |   |   |   |   |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 |   |
+| *Pruebas generales y corrección de errores* |   |   |   |   |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 | 🟪 |
+| *Elaboración y revisión del manual y documentación final* |   |   |   |   |   |   |   |   |   |   |   |   |   | 🟪 | 🟪 | 🟪 |
+| *Entrega final del software* |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 🟪 |
+| *Preparación y sustentación del proyecto* |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 🟪 |
 
 ### Presupuesto del proyecto
 
